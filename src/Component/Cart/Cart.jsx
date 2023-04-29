@@ -72,7 +72,7 @@ const Cart = () => {
           
 
           {DATA.map((data)=>(
-            <div className="cart-display">
+            <div key={data.product.id} className="cart-display">
 
 
             <div className="name-image">
@@ -91,7 +91,7 @@ const Cart = () => {
               <div className="size-cart">{data.size}</div>
               <div className="toppings-cart">
                 {data.toppings.map((topping)=>(
-                  <span>-{topping}</span>
+                  <span key={topping}>-{topping}</span>
                 ))}
                 
               </div>

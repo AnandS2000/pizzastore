@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 
 import { addToCart } from '../../features/cartSlice';
 
-const Modal = ({open, onClose, key, product}) => {
+const Modal = ({open, onClose, product}) => {
 
     const dispatch = useDispatch();
 
@@ -43,7 +43,7 @@ const Modal = ({open, onClose, key, product}) => {
                 break;
             
         }
-        console.log(effectivePrice);
+        //console.log(effectivePrice);
         const cartAdd = {
             product: product,
             size: size,
@@ -81,7 +81,7 @@ const Modal = ({open, onClose, key, product}) => {
                 <div className='radio-size'>
                     {product.size[0]?.items.map((sizeData)=>(
 
-                    <div>
+                    <div key={sizeData.size}>
                         <input type="radio" id={sizeData.size} name="size" value={sizeData.size} onChange={updateSize}/>
                         <label htmlFor={sizeData.size}>{sizeData.size}</label>
                     </div>
@@ -113,7 +113,7 @@ const Modal = ({open, onClose, key, product}) => {
 
 
                     {product.toppings[0]?.items.map((sizeData)=>(
-                        <li>
+                        <li key={sizeData.name}>
                             <input type="checkbox" id={sizeData.name} name={sizeData.name} value={sizeData.name} onChange={(updateToppings)} />
                             <label htmlFor={sizeData.name}>{sizeData.name}</label>
                         </li>

@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 
-const ProductCard = ({ key, product }) => {
+const ProductCard = ({ product }) => {
 
   const [openModal, setOpenModal] = useState(false);
 
@@ -34,7 +34,7 @@ const ProductCard = ({ key, product }) => {
                 </div>
 
     </div>
-    <Modal open={openModal} key={key} product={product}  
+    <Modal open={openModal} product={product}  
       onClose={() => setOpenModal(false)}/>
     </>
   )

@@ -72,17 +72,17 @@ const Products = () => {
         <div className="products-header">
             <h1>Discover Over Menu</h1>
             <ul className="products-filter">
-                <li className={selectedFilter === 'all' ? 'active' : ''}
+                <li key='all' className={selectedFilter === 'all' ? 'active' : ''}
                   onClick={handleFilter} value='all'>All</li>
-                <li className={selectedFilter === 'veg' ? 'active' : ''} 
+                <li key='veg' className={selectedFilter === 'veg' ? 'active' : ''} 
                 onClick={handleFilter} value='veg'>Veg</li>
-                <li className={selectedFilter === 'non-veg' ? 'active' : ''}
+                <li key='non-veg' className={selectedFilter === 'non-veg' ? 'active' : ''}
                 onClick={handleFilter} value='non-veg'>Non-Veg</li>
-                <li className={selectedFilter === 'rating' ? 'active' : ''} 
+                <li key='rating' className={selectedFilter === 'rating' ? 'active' : ''} 
                 onClick={handleFilter} value='rating'>Most-Rated</li>
-                <li className={selectedFilter === 'price-lowest' ? 'active' : ''}
+                <li key='price-lowest' className={selectedFilter === 'price-lowest' ? 'active' : ''}
                 onClick={handleFilter} value='price-lowest'>Price-Lowest</li>
-                <li className={selectedFilter === 'price-highest' ? 'active' : ''}
+                <li key='price-highest' className={selectedFilter === 'price-highest' ? 'active' : ''}
                 onClick={handleFilter} value='price-highest'>Price-Highest</li>
             </ul>
 

@@ -59,7 +59,7 @@ const Products = () => {
   useEffect(()=>{
     setProducts(DATA)
     //console.log(products[0]);
-  }, [DATA, products])
+  }, [DATA])
 
   
 

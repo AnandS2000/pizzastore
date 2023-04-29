@@ -58,14 +58,14 @@ const Modal = ({open, onClose, key, product}) => {
         onClose();
     }
 
-    useEffect(()=>{
-        //setItem(size);
-        console.log(size);
+    // useEffect(()=>{
+    //     //setItem(size);
+    //     console.log(size);
         
-    },[size])
-    useEffect(()=>{
-        console.log(toppings);
-    },[toppings])
+    // },[size])
+    // useEffect(()=>{
+    //     console.log(toppings);
+    // },[toppings])
 
     if(!open){
         return null

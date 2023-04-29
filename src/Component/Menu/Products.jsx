@@ -10,7 +10,7 @@ const Products = () => {
 
   const dispatch = useDispatch();
   const DATA = useSelector((state) => state.product.data);
-  console.log(DATA);
+  //console.log(DATA);
 
   const [products, setProducts] = useState([]);
   const [selectedFilter, setSelectedFilter] = useState('all');
@@ -50,7 +50,7 @@ const Products = () => {
       default: setProducts(DATA);
         break;
     }
-    console.log(products[0]);
+    //console.log(products[0]);
   }
 
   useEffect(()=>{
@@ -58,7 +58,7 @@ const Products = () => {
   },[dispatch])
   useEffect(()=>{
     setProducts(DATA)
-    console.log(products[0]);
+    //console.log(products[0]);
   }, [DATA, products])
 
   

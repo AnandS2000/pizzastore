@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Header.css";
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { useEffect } from 'react';
 import { useState } from 'react';
 
 const Header = () => {
 
-    const dispatch = useDispatch();
+    //const dispatch = useDispatch();
 
     const [cartItems,setCartItems] = useState(0);
 

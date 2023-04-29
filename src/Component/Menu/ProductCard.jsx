@@ -2,7 +2,7 @@ import React from 'react'
 import Modal from './Modal';
 import './ProductCard.css'
 import { useState } from 'react';
-import { useEffect } from 'react';
+
 
 
 const ProductCard = ({ key, product }) => {

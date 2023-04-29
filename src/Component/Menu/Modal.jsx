@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
 import './Modal.css'
-import { useDispatch, useSelector } from 'react-redux'
+import { useDispatch } from 'react-redux'
 
 import { addToCart } from '../../features/cartSlice';
 

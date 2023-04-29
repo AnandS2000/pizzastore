@@ -55,16 +55,13 @@ const Products = () => {
 
   useEffect(()=>{
     dispatch(fetchProducts())
-    
-  },[])
+  },[dispatch])
   useEffect(()=>{
     setProducts(DATA)
     console.log(products[0]);
-  }, [DATA])
+  }, [DATA, products])
 
-  useEffect(()=>{
-    
-  },[products])
+  
 
   
 

@@ -41,13 +41,17 @@ export function fetchProducts() {
                                     "price": "100",
                                     "size": [
                                         {
-                                            "size": "Regular"
-                                        },
-                                        {
-                                            "size": "Medium"
-                                        },
-                                        {
-                                            "size": "Large"
+                                            "items": [
+                                                {
+                                                    "size": "Small"
+                                                },
+                                                {
+                                                    "size": "Medium"
+                                                },
+                                                {
+                                                    "size": "Large"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

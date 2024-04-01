@@ -38,7 +38,18 @@ export function fetchProducts() {
                                     "name": "MArgrita pizza",
                                     "rating": "5",
                                     "isVeg": "true",
-                                    "price": "100"
+                                    "price": "100",
+                                    "size": [
+                                        {
+                                            "size": "Regular"
+                                        },
+                                        {
+                                            "size": "Medium"
+                                        },
+                                        {
+                                            "size": "Large"
+                                        }
+                                    ]
                                 }
                             ]
                 dispatch(setProducts(data));
